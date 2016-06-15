@@ -28,9 +28,24 @@ describe ('The FizzBuzz Game: ', () => {
       expect(result).to.equal('Buzz')
     })
 
-    it('should return false if passed a number notdivisible by 3 or 5', () => {
+    it('should return false if passed 7', () => {
       var result = fizzbuzz.check_number(7)
       expect(result).to.equal(false)
+    })
+
+    it('should return Fizz if passed 13', () => {
+      var result = fizzbuzz.check_number(13)
+      expect(result).to.equal('Fizz')
+    })
+
+    it('should return Fizz if passed 31', () => {
+      var result = fizzbuzz.check_number(31)
+      expect(result).to.equal('Fizz')
+    })
+
+    it('should return Buzz if passed 52', () => {
+      var result = fizzbuzz.check_number(52)
+      expect(result).to.equal('Buzz')
     })
 
 
