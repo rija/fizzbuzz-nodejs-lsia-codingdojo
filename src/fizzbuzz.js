@@ -1,18 +1,16 @@
-'use strict';
 
-module.exports = {
-  check: function (number) {
 
-    if (number % 5 === 0 && number % 3 === 0) {
-      return 'FizzBuzz' ;
+var fizzbuzz = {
+  check_number : (num) => {
+    if (num % 3 === 0 ) {
+      return 'Fizz'
     }
-    if (number % 3 === 0) {
-      return 'Fizz' ;
+    if (num % 5 === 0 ) {
+      return 'Buzz'
     }
-    if (number % 5 === 0) {
-      return 'Buzz' ;
-    }
-    return false;
+    return false
   }
-
 }
+
+
+module.exports = fizzbuzz
