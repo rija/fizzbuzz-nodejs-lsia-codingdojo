@@ -37,5 +37,27 @@ describe('The FizzBuzz game: ', () => {
       expect(result).to.equal('FizzBuzz')
     })
 
+    it('should return Fizz if passed 31', () => {
+      var result = fizzbuzz.check_number(31)
+      expect(result).to.equal('Fizz')
+    })
+
+    it('should return Fizz if passed 52', () => {
+      var result = fizzbuzz.check_number(52)
+      expect(result).to.equal('Buzz')
+    })
+
+    it('should return Fizz if passed 51', () => {
+      var result = fizzbuzz.check_number(51)
+      expect(result).to.equal('Fizz')
+    })
+
+    it('should return Buzz if passed 35', () => {
+      var result = fizzbuzz.check_number(35)
+      expect(result).to.equal('Buzz')
+    })
+
+
+
   })
 })
