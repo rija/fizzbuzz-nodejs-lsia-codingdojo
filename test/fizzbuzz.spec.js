@@ -45,6 +45,10 @@ describe('The FizzBuzz Game:', () => {
       expect(result).to.equal('Buzz')
     })
 
+    it('should return Fizz if passed 51 (multiple of 3 before having 5 in it)', () => {
+      var result = fizzbuzz.check_number(51)
+      expect(result).to.equal('Fizz')
+    })
 
 
 
